@@ -20,7 +20,7 @@ const copyText = (text) => {
     <img
       :src="props.data?.foto_opening"
       alt="Amantrana"
-      class="w-full md:h-full h-[80dvh] object-cover"
+      class="w-full md:h-[85dvh] h-[80dvh] object-cover"
     />
     <div class="absolute top-0 left-0 bg-white/70 h-full py-10 px-10">
       <div class="text-center mb-3" data-aos="zoom-in" data-aos-delay="500">

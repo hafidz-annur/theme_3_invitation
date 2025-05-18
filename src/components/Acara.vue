@@ -4,8 +4,12 @@ import moment from "moment";
 const props = defineProps({ data: Object });
 </script>
 <template>
-  <v-container height="75vh" class="relative p-0 overflow-hidden">
-    <img :src="props.data?.foto_opening" alt="Amantrana" class="w-full h-full object-cover" />
+  <v-container height="90dvh" class="relative p-0 overflow-hidden">
+    <img
+      :src="props.data?.foto_opening"
+      alt="Amantrana"
+      class="w-full h-full object-cover"
+    />
     <div class="absolute top-0 left-0 w-full h-full bg-black/70 py-10">
       <div class="flex justify-center items-center px-5">
         <div class="text-center w-full">
@@ -14,76 +18,111 @@ const props = defineProps({ data: Object });
             terbentuknya ikatan suci ini. Kami ingin Anda menjadi bagian dari
             hari istimewa kami.
           </p>
-          <v-card rounded="lg" class="mb-10" data-aos="fade-right" data-aos-delay="1000">
-            <v-row class="items-center" no-gutters="">
-              <v-col md="2" cols="3" class="bg-white flex justify-center text-center">
-                <v-icon
-                  color="primary"
-                  icon="mdi-book-heart-outline"
-                  class="-rotate-90 -mr-[25px]"
-                ></v-icon>
-                <h4 class="-rotate-90 font-bold text-nowrap -mr-[20px]">
-                  Akad Nikah
-                </h4>
-              </v-col>
-              <v-col md="10" cols="9" class="bg-primary py-3 px-5 text-start">
-                <div class="flex items-center">
-                  <v-icon icon="mdi-calendar-heart"></v-icon>
-                  <div class="ms-3">
-                    <p class="mb-0 text-xl font-bold">
-                      {{ props.data?.acara?.akad_nikah?.hari }}
-                    </p>
-                    <p class="font-bold">
-                      {{ props.data?.acara?.akad_nikah?.tanggal }}
-                    </p>
-                    <p>Pukul {{ props.data?.acara?.akad_nikah?.waktu }}</p>
-                  </div>
+
+          <v-card
+            rounded="0"
+            class="mb-10"
+            color="primary"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+          >
+            <div class="bg-white p-5 py-2">
+              <v-icon
+                icon="mdi-book-heart-outline"
+                class="mb-2"
+                size="25"
+                color="primary"
+              ></v-icon>
+              <h4 class="text-2xl text-nowrap">Akad Nikah</h4>
+            </div>
+            <v-card-text>
+              <div class="flex justify-center items-center gap-3 md:px-10 px-2">
+                <div class="w-40">
+                  <v-divider thickness="3" color="white" opacity="1" />
+                  <p class="my-2 text-center">
+                    {{ props.data?.acara?.akad_nikah?.hari }}
+                  </p>
+                  <v-divider thickness="3" color="white" opacity="1" />
                 </div>
-                <hr class="my-1" />
-                <div class="flex items-center">
-                  <v-icon icon="mdi-store-marker"></v-icon>
-                  <p class="ms-3">
-                    {{ props.data?.acara?.akad_nikah?.tempat }}
+                <div class="w-20">
+                  <p>
+                    {{ props.data?.acara?.akad_nikah?.tahun }}
+                  </p>
+                  <p class="text-3xl">
+                    {{ props.data?.acara?.akad_nikah?.tanggal }}
+                  </p>
+                  <p>
                   </p>
                 </div>
-              </v-col>
-            </v-row>
+                <div class="w-40 text-center">
+                  <v-divider thickness="3" color="white" opacity="1" />
+                  <p class="my-2">
+                    {{ props.data?.acara?.akad_nikah?.bulan }}
+                  </p>
+                  <v-divider thickness="3" color="white" opacity="1" />
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <p>
+                  {{ props.data?.acara?.akad_nikah?.waktu }}
+                </p>
+                <p>
+                  {{ props.data?.acara?.akad_nikah?.tempat }}
+                </p>
+              </div>
+            </v-card-text>
           </v-card>
 
-          <v-card rounded="lg" data-aos="fade-left" data-aos-delay="1500">
-            <v-row class="items-center" no-gutters="">
-              <v-col md="10" cols="9" class="bg-primary py-3 px-5 text-start">
-                <div class="flex items-center justify-end">
-                  <div class="me-3 text-end">
-                    <p class="mb-0 text-xl font-bold">
-                      {{ props.data?.acara?.akad_nikah?.hari }}
-                    </p>
-                    <p class="font-bold">
-                      {{ props.data?.acara?.akad_nikah?.tanggal }}
-                    </p>
-                    <p>Pukul {{ props.data?.acara?.akad_nikah?.waktu }}</p>
-                  </div>
-                  <v-icon icon="mdi-calendar-heart"></v-icon>
-                </div>
-                <hr class="my-1" />
-                <div class="flex items-center justify-end">
-                  <p class="me-3 text-end">
-                    {{ props.data?.acara?.akad_nikah?.tempat }}
+          <v-card
+            rounded="0"
+            class="mb-10"
+            color="primary"
+            data-aos="fade-right"
+            data-aos-delay="1000"
+          >
+            <div class="bg-white p-5 py-2">
+              <v-icon
+                icon="mdi-store-marker"
+                class="mb-2"
+                size="25"
+                color="primary"
+              ></v-icon>
+              <h4 class="text-2xl text-nowrap">Resepsi</h4>
+            </div>
+            <v-card-text>
+              <div class="flex justify-center items-center gap-3 md:px-10 px-2">
+                <div class="w-40">
+                  <v-divider thickness="3" color="white" opacity="1" />
+                  <p class="my-2 text-center">
+                    {{ props.data?.acara?.resepsi?.hari }}
                   </p>
-                  <v-icon icon="mdi-store-marker"></v-icon>
+                  <v-divider thickness="3" color="white" opacity="1" />
                 </div>
-              </v-col>
-              <v-col md="2" cols="3" class="bg-white flex justify-center text-center">
-                <h4 class="rotate-90 font-bold text-nowrap -ml-[20px]">
-                  Resepsi
-                </h4>
-                <v-icon
-                  color="primary"
-                  icon="mdi-email-open-heart-outline"
-                  class="rotate-90 -ml-[15px]"
-                ></v-icon>
-              </v-col>
-            </v-row>
+                <div class="w-20">
+                  <p>
+                    {{ props.data?.acara?.resepsi?.tahun }}
+                  </p>
+                  <p class="text-3xl">
+                    {{ props.data?.acara?.resepsi?.tanggal }}
+                  </p>
+                </div>
+                <div class="w-40 text-center">
+                  <v-divider thickness="3" color="white" opacity="1" />
+                  <p class="my-2">
+                    {{ props.data?.acara?.resepsi?.bulan }}
+                  </p>
+                  <v-divider thickness="3" color="white" opacity="1" />
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <p>
+                  {{ props.data?.acara?.resepsi?.waktu }}
+                </p>
+                <p>
+                  {{ props.data?.acara?.resepsi?.tempat }}
+                </p>
+              </div>
+            </v-card-text>
           </v-card>
         </div>
       </div>

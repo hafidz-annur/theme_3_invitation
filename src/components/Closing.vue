@@ -10,7 +10,7 @@ const props = defineProps({ data:Object, caption: Object });
       <div
         class="text-center mb-10 px-5" data-aos="zoom-in" data-aos-delay="500"
       >
-        <p class="text-[14px]" v-html="props.caption?.islam?.penutup[1]"></p>
+        <p class="text-[14px]" v-html="props.caption?.islam?.penutup[2]"></p>
       </div>
       <div
         class="absolute bottom-[15vh] left-0 w-full" data-aos="fade-up" data-aos-delay="1000"

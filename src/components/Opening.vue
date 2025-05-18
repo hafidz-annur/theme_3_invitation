@@ -38,15 +38,15 @@ const saveCalendar = () => {
       class="h-full object-cover"
     />
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#41729F]/40 to-[#274472] "
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#41729F]/40 to-[#6786b8] "
     >
       <div class="p-5">
         <div
           class="text-center pt-5 animate__animated animate__zoomIn animate__delay-1s"
         >
           <p
-            v-html="props.caption?.islam?.pembuka[0]"
-            class="text-[14px] mt-3"
+            v-html="props.caption?.islam?.pembuka[2]"
+            class="text-[12px] mt-3"
           ></p>
         </div>
 
@@ -85,7 +85,7 @@ const saveCalendar = () => {
               prepend-icon="mdi-calendar"
               @click="saveCalendar"
               class="mt-3"
-              rounded
+              rounded="0"
             >
               Save Calendar
             </v-btn>

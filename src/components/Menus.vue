@@ -107,8 +107,8 @@ watch(() => {
 onMounted(() => {
   audio.value = new Audio(props.data?.musik);
   autoplay_menu.value = true;
-  // autoplayMenu();
-  // playMusic();
+  autoplayMenu();
+  playMusic();
 });
 </script>
 
@@ -131,14 +131,14 @@ onMounted(() => {
       @click="playMusic()"
     />
   </div>
-  <div class="fixed bottom-0 left-0 z-[9999] w-full px-5">
+  <div class="fixed bottom-0 left-0 z-[9999] w-full">
     <v-tabs
       v-model="selected"
       align-tabs="center"
       height="50"
       stacked
       center-active
-      class="bg-white/40 rounded-t-xl"
+      class="bg-primary rounded-none"
       @update:model-value="selectedMenu()"
     >
       <v-tab
@@ -146,10 +146,10 @@ onMounted(() => {
         v-for="item in menus"
         :value="item.title"
         class="p-0"
-        :class="item.title == selected ? 'bg-primary' : null"
+        :class="item.title == selected ? 'bg-white text-primary' : null"
       >
         <v-icon :icon="item.icon" size="20" />
-        <p class="text-[10px] text-white">
+        <p class="text-[10px]" :class="item.title == selected ? 'text-primary' : null">
           {{ item.title }}
         </p>
       </v-tab>

@@ -105,7 +105,7 @@ onMounted(() => {
     <div class="bg-gray-700/80 p-5 animate__animated animate__fadeInUp">
       <div class="h-full overflow-hidden py-10">
         <h3
-          class="text-2xl font-bold text-center mb-3 animate__animated animate__zoomIn animate__delay-1s"
+          class="text-2xl text-white text-center mb-3 animate__animated animate__zoomIn animate__delay-1s"
         >
           Kirim Ucapan
         </h3>
@@ -120,6 +120,7 @@ onMounted(() => {
             @click="dialog = true"
             color="light"
             size="small"
+            rounded="0"
           >
             Kirim Pesan
           </v-btn>
@@ -134,7 +135,7 @@ onMounted(() => {
           >
             <div class="flex items-center justify-between">
               <div>
-                <p class="mb-0 text-primary flex items-center">
+                <p class="mb-0 text-white flex items-center">
                   {{ item.nama }}
                   <v-icon
                     icon="mdi-check-circle"

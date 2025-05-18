@@ -21,6 +21,7 @@ const props = defineProps({ data: Object });
           prepend-icon="mdi-google-maps"
           color="primary"
           size="small"
+          rounded="0"
         >
           Lihat Lokasi
         </v-btn>
