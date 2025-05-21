@@ -23,15 +23,11 @@ export default createVuetify({
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    primary: "#274472", // Navy Blue (utama)
-    secondary: "#41729F", // Muted Blue (aksen)
-    background: "#F4F6FA", // Latar belakang abu kebiruan yang lembut
+    primary: "#5D3A9B", // Royal Purple (utama)
+    secondary: "#A267AC", // Soft Purple (aksen)
+    background: "#F8F5FA", // Ungu sangat muda sebagai latar
     surface: "#FFFFFF", // Permukaan putih bersih
-    text: "#1C1C1C", // Teks utama: hampir hitam
-    success: "#3CB371", // Hijau sejuk (elegan)
-    warning: "#FFC107", // Kuning amber (masih cocok dengan biru)
-    error: "#C0392B", // Merah elegan
-    info: "#2980B9", // Biru terang tapi tetap kalem
+    text: "#2E1F47", // Teks utama: ungu tua
   },
 };
 
