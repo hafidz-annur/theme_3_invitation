@@ -23,11 +23,11 @@ export default createVuetify({
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    primary: "#825a99", // Royal Purple (utama)
-    secondary: "#A267AC", // Soft Purple (aksen)
-    background: "#F8F5FA", // Ungu sangat muda sebagai latar
+    primary: "#F9A825", // Golden Yellow (utama)
+    secondary: "#FF7043", // Orange Coral (aksen)
+    background: "#FFF8E1", // Kuning sangat muda
     surface: "#FFFFFF", // Permukaan putih bersih
-    text: "#2E1F47", // Teks utama: ungu tua
+    text: "#4E342E",
   },
 };
 

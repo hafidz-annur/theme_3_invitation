@@ -38,7 +38,7 @@ const saveCalendar = () => {
       class="h-full object-cover"
     />
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#6587bd]/40 to-[#684e78] "
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#6587bd]/20 to-[#51360c]"
     >
       <div class="p-5">
         <div
