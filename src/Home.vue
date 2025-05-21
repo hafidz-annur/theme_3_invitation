@@ -100,16 +100,16 @@ onMounted(() => {
       </div>
 
       <div class="w-[200px] mt-2">
-        <v-progress-linear v-model="progress" color="white" height="20" rounded>
+        <v-progress-linear v-model="progress" color="primary" height="20" rounded>
           <template v-slot:default="{ value }">
-            <strong class="text-gray-700 text-[10px]"
+            <strong class="text-primary text-[10px]"
               >{{ Math.ceil(value) }}%</strong
             >
           </template>
         </v-progress-linear>
       </div>
       <div class="px-5 text-center mt-3">
-        <p class="text-md">
+        <p class="text-md text-primary">
           Bersiaplah untuk kisah indah kami... <br />
           sebentar lagi tampil 💑
         </p>
