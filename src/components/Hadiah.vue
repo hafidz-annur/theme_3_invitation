@@ -22,7 +22,7 @@ const copyText = (text) => {
       alt="Amantrana"
       class="w-full md:h-[85dvh] h-[80dvh] object-cover"
     />
-    <div class="absolute top-0 left-0 bg-white/70 h-full py-10 px-10">
+    <div class="absolute top-0 left-0 bg-white/40 h-full py-10 px-10">
       <div class="text-center mb-3" data-aos="zoom-in" data-aos-delay="500">
         <h4 class="mb-1 text-2xl text-primary-700">Terima Kasih</h4>
         <p class="text-gray-800">
@@ -57,14 +57,14 @@ const copyText = (text) => {
           >Kirim Kado</v-tab
         >
       </v-tabs>
-      <div class="py-3" data-aos="zoom-in" data-aos-delay="1000">
+      <div class="py-3 bg-white/40 px-3" data-aos="zoom-in" data-aos-delay="1000">
         <v-tabs-window v-model="tab" align-tabs="center">
           <v-tabs-window-item value="one">
             <div class="md:h-[350px] h-[260px] overflow-auto">
               <div
                 v-for="item in props.data?.hadiah?.bank"
                 :key="item"
-                class="mb-3 bg-yellow-600/60 p-2 py-4 rounded-lg shadow-lg"
+                class="mb-3 bg-green-400/60 p-2 py-4 rounded-lg shadow-lg"
               >
                 <div class="flex justify-between items-center">
                   <div class="">
@@ -100,7 +100,7 @@ const copyText = (text) => {
               <div
                 v-for="item in props.data?.hadiah?.ewallet"
                 :key="item"
-                class="mb-3 bg-yellow-600/60 p-2 py-4 rounded-lg shadow-lg"
+                class="mb-3 bg-green-400/60 p-2 py-4 rounded-lg shadow-lg"
               >
                 <div class="flex justify-between items-center">
                   <div class="">
@@ -134,7 +134,7 @@ const copyText = (text) => {
           <v-tabs-window-item value="three">
             <div class="text-center">
               <v-icon icon="mdi-gift-outline" size="40" class="mb-2" />
-              <h3 class="font-bold">Alamat</h3>
+              <h3 class="text-2xl">Alamat</h3>
               <p class="mt-3 text-gray-800">
                 {{ props.data?.hadiah?.alamat }}
               </p>

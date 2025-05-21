@@ -25,7 +25,7 @@ const openInvitation = () => {
     </v-carousel>
 
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#6587bd]/20 to-[#51360c]"
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#b1f4f1]/0 to-[#15695e]"
     >
       <div class="absolute bottom-10 left-0 w-full flex justify-center">
         <div class="md:w-[60%] w-[80%]">
