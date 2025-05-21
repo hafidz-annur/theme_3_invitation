@@ -23,7 +23,7 @@ export default createVuetify({
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    primary: "#5D3A9B", // Royal Purple (utama)
+    primary: "#825a99", // Royal Purple (utama)
     secondary: "#A267AC", // Soft Purple (aksen)
     background: "#F8F5FA", // Ungu sangat muda sebagai latar
     surface: "#FFFFFF", // Permukaan putih bersih

@@ -24,7 +24,7 @@ const copyText = (text) => {
     />
     <div class="absolute top-0 left-0 bg-white/70 h-full py-10 px-10">
       <div class="text-center mb-3" data-aos="zoom-in" data-aos-delay="500">
-        <h4 class="mb-1 text-2xl font-bold text-gray-700">Terima Kasih</h4>
+        <h4 class="mb-1 text-2xl text-primary-700">Terima Kasih</h4>
         <p class="text-gray-800">
           Terima kasih telah menambah semangat kegembiraan pernikahaan kam
           dengan kehadiran dan hadiah indah Anda.
@@ -36,24 +36,24 @@ const copyText = (text) => {
         align-tabs="center"
         data-aos="zoom-in"
         data-aos-delay="1000"
-        class="bg-white/30"
+        class="bg-primary"
       >
         <v-tab
           value="one"
           class="text-[12px]"
-          :class="tab == 'one' ? 'bg-white text-gray-500' : null"
+          :class="tab == 'one' ? 'bg-secondary text-gray-500' : null"
           >Bank</v-tab
         >
         <v-tab
           value="two"
           class="text-[12px]"
-          :class="tab == 'two' ? 'bg-white text-gray-500' : null"
+          :class="tab == 'two' ? 'bg-secondary text-gray-500' : null"
           >E-Wallet</v-tab
         >
         <v-tab
           value="three"
           class="text-[12px]"
-          :class="tab == 'three' ? 'bg-white text-gray-500' : null"
+          :class="tab == 'three' ? 'bg-secondary text-gray-500' : null"
           >Kirim Kado</v-tab
         >
       </v-tabs>
@@ -64,14 +64,14 @@ const copyText = (text) => {
               <div
                 v-for="item in props.data?.hadiah?.bank"
                 :key="item"
-                class="mb-3 bg-[#fff]/70 p-2 py-4 rounded-lg shadow-lg"
+                class="mb-3 bg-purple-800/60 p-2 py-4 rounded-lg shadow-lg"
               >
                 <div class="flex justify-between items-center">
                   <div class="">
                     <p class="text-center text-gray-800 my-1">
                       {{ item.atas_nama }}
                     </p>
-                    <div class="flex items-center text-gray-400 mt-1">
+                    <div class="flex items-center text-white mt-1">
                       <v-icon
                         icon="mdi-wallet-bifold-outline"
                         class="me-2"
@@ -100,14 +100,14 @@ const copyText = (text) => {
               <div
                 v-for="item in props.data?.hadiah?.ewallet"
                 :key="item"
-                class="mb-3 bg-[#fff]/70 p-2 py-4 rounded-lg shadow-lg"
+                class="mb-3 bg-purple-800/60 p-2 py-4 rounded-lg shadow-lg"
               >
                 <div class="flex justify-between items-center">
                   <div class="">
                     <p class="text-center text-gray-800 my-1">
                       {{ item.atas_nama }}
                     </p>
-                    <div class="flex items-center text-gray-400 mt-1">
+                    <div class="flex items-center text-white mt-1">
                       <v-icon
                         icon="mdi-wallet-bifold-outline"
                         class="me-2"
